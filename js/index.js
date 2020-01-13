@@ -49,12 +49,18 @@ middle.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 //nav
 const headerNav = document.querySelectorAll('a');
-headerNav[0].textContent= siteContent.nav['nav-item-1'];
+headerNav[0].textContent=siteContent.nav['nav-item-1'];
 headerNav[1].textContent=siteContent.nav['nav-item-2'];
 headerNav[2].textContent=siteContent.nav['nav-item-3'];
 headerNav[3].textContent=siteContent.nav['nav-item-4'];
 headerNav[4].textContent=siteContent.nav['nav-item-5'];
 headerNav[5].textContent=siteContent.nav['nav-item-6'];
+
+//change color
+headerNav.forEach(color =>{
+  color.style.color = 'green';
+})
+
 
 //title and button
 const title = document.querySelector('h1');
@@ -72,6 +78,7 @@ allH4[3].textContent=siteContent['main-content']['product-h4'];
 allH4[4].textContent=siteContent['main-content']['vision-h4'];
 allH4[5].textContent=siteContent['contact']['contact-h4'];
 
+//all para
 const allPara = document.querySelectorAll('p')
 allPara[0].textContent=siteContent['main-content']['features-content'];
 allPara[1].textContent=siteContent['main-content']['about-content'];
@@ -81,5 +88,12 @@ allPara[4].textContent=siteContent['main-content']['vision-content'];
 allPara[5].textContent=siteContent['contact']['address'];
 allPara[6].textContent=siteContent['contact']['phone'];
 allPara[7].textContent=siteContent['contact']['email'];
+allPara[8].textContent=siteContent['footer']['copyright'];
 
+//add to new items to nav bar
+
+// const headerNav =document.querySelector('nav')
+// const firstLink= document.createElement('a')
+// newLink.textContent = 'Home'
+// headerNav.appendChild(firstLink)
 
