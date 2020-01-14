@@ -66,8 +66,13 @@ headerNav.forEach(color =>{
 const title = document.querySelector('h1');
 title.textContent ='DOM is Awesome';
 
+title.style.color = 'green';
+
+
 const button= document.querySelector('button');
 button.textContent='Get Started';
+
+button.style.color='pink';
 
 //all h4 content
 const allH4 = document.querySelectorAll('h4')
@@ -77,6 +82,12 @@ allH4[2].textContent=siteContent['main-content']['services-h4'];
 allH4[3].textContent=siteContent['main-content']['product-h4'];
 allH4[4].textContent=siteContent['main-content']['vision-h4'];
 allH4[5].textContent=siteContent['contact']['contact-h4'];
+
+allH4.forEach(color =>{
+  color.style.color = 'blue';
+  color.style.backgroundColor= 'yellow'
+  color.style.border = '2px solid black'
+})
 
 //all para
 const allPara = document.querySelectorAll('p')
