@@ -90,10 +90,23 @@ allPara[6].textContent=siteContent['contact']['phone'];
 allPara[7].textContent=siteContent['contact']['email'];
 allPara[8].textContent=siteContent['footer']['copyright'];
 
-//add to new items to nav bar
+//add two new items to nav bar
 
-// const headerNav =document.querySelector('nav')
-// const firstLink= document.createElement('a')
-// newLink.textContent = 'Home'
-// headerNav.appendChild(firstLink)
+const addNav = document.querySelector('nav');
+
+const firstLink=document.createElement('a')
+firstLink.textContent='Home';
+
+addNav.prepend(firstLink);
+
+
+const lastLink = document.createElement('a');
+lastLink.textContent='Learn';
+
+addNav.appendChild(lastLink);
+
+const headerNav2 = document.querySelectorAll('a');
+headerNav2.forEach(element =>{
+  element.style.color = 'green';
+})
 
